@@ -1,12 +1,15 @@
 package com.light_mini.mobilesafe.setting;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 
 import com.light_mini.mobilesafe.R;
+import com.light_mini.mobilesafe.view.SettingRelativeLayout;
 
 public class SettingActivity extends Activity {
     /**
@@ -38,6 +41,13 @@ public class SettingActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
+        final SettingRelativeLayout updatesetting=findViewById(R.id.siv_update);
+        updatesetting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updatesetting.setCheck(!updatesetting.isChecked());
+            }
+        });
     }
 
     /**

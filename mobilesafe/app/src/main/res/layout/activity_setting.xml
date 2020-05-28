@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.light_mini.mobilesafe.view.SettingRelativeLayout
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.light_mini.mobilesafe"
+        app:desTitle="自动更新设置"
+        app:desOff="已关闭"
+        app:desOn="已开启"
+        android:id="@+id/siv_update"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"/>
+    <com.light_mini.mobilesafe.view.SettingRelativeLayout
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.light_mini.mobilesafe"
+        app:desTitle="电话归属地显示设置"
+        app:desOff="已关闭"
+        app:desOn="已开启"
+        android:id="@+id/siv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.light_mini.mobilesafe.view.SettingRelativeLayout
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.light_mini.mobilesafe"
+        app:desTitle="归属地风格设置"
+        app:desOff="已关闭"
+        app:desOn="已开启"
+        android:id="@+id/siv_address_toast_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.light_mini.mobilesafe.view.SettingRelativeLayout
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.light_mini.mobilesafe"
+        app:desTitle="黑名单拦截设置"
+        app:desOff="已关闭"
+        app:desOn="已开启"
+        android:id="@+id/siv_blok_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.light_mini.mobilesafe.view.SettingRelativeLayout
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.light_mini.mobilesafe"
+        app:desTitle="程序锁设置"
+        app:desOff="已关闭"
+        app:desOn="已开启"
+        android:id="@+id/siv_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-    </com.light_mini.mobilesafe.view.SettingRelativeLayout>
 
 </LinearLayout>

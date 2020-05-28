@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingRelativeLayout">
+        <attr name="desTitle" format="string"></attr>
+        <attr name="desOff" format="string"></attr>
+        <attr name="desOn" format="string"></attr>
+    </declare-styleable>
+</resources>

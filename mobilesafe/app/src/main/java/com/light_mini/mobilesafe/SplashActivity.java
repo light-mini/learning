@@ -20,6 +20,7 @@ import com.lidroid.xutils.HttpUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.light_mini.mobilesafe.Util.MyToast;
 import com.light_mini.mobilesafe.Util.StreamUtlis;
 
 import org.json.JSONException;
@@ -118,13 +119,16 @@ public class SplashActivity extends Activity {
                     }
                 } catch (MalformedURLException e) {
                     e.printStackTrace();
-                    Log.d(TAG, "MAL来女王成功");
+                    msg.what=ENTER_MAIN;
+                    MyToast.showShortMeg(SplashActivity.this,"MalformedURLException");
                 } catch (IOException e) {
                     e.printStackTrace();
-                    Log.d(TAG, "IO来女王成功");
+                    msg.what=ENTER_MAIN;
+                    MyToast.showShortMeg(SplashActivity.this,"IOException");
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    Log.d(TAG, "JSON来女王成功");
+                    msg.what=ENTER_MAIN;
+                    MyToast.showShortMeg(SplashActivity.this,"JSONException");
                 }finally {
                     long currTime=System.currentTimeMillis()-time;
                     if (currTime<4000){
